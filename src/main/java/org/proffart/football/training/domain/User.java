@@ -11,7 +11,7 @@ import java.io.Serializable;
  * Date 7/29/16
  * Time 9:47 PM
  */
-@Entity
+@Entity(name = "user")
 public class User implements Serializable {
     private static final long serialVersionUID = 8537416271048984112L;
 
