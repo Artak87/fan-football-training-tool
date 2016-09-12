@@ -22,7 +22,9 @@ public class Player implements Serializable {
     @JoinColumn(name = "userId")
     private User user;
 
-//    groupId (many-to-one)
+    @ManyToOne
+    @JoinColumn(name = "groupId")
+    private Group group;
 
     @Column(length = 64)
     private String fullName;
