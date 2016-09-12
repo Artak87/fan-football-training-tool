@@ -19,8 +19,10 @@ public class User implements Serializable {
     @GeneratedValue
     @Column
     private Integer userId;
+
     @Column
     private String login;
+
     @Column
     private String password;
 
