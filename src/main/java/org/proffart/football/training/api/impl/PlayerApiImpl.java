@@ -21,8 +21,8 @@ public class PlayerApiImpl implements PlayerApi {
     }
 
     @PUT
-    @Override
-    public String savePlayer(String name) {
+    @Path("{id}")
+    public String savePlayer(@PathParam("id") Integer id) {
         return null;
     }
 
@@ -44,3 +44,4 @@ public class PlayerApiImpl implements PlayerApi {
         return null;
     }
 }
+
