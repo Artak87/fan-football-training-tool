@@ -22,26 +22,29 @@ public class PlayerApiImpl implements PlayerApi {
 
     @PUT
     @Path("{id}")
+    @Override
     public String savePlayer(@PathParam("id") Integer id) {
         return null;
     }
 
     @DELETE
+    @Path("/{id}")
     @Override
-    public String deletePlayer(String name) {
+    public String deletePlayer(@PathParam("id") Integer id) {
         return null;
     }
 
     @GET
+    @Path("/{id}")
     @Override
-    public String getPlayer(String name) {
+    public String getPlayer(@PathParam("id") Integer id) {
         return null;
     }
 
     @GET
+    @Path(" /list/{filter}")
     @Override
-    public String getPlayers(String name) {
+    public String getPlayers(@PathParam("filter") Integer id) {
         return null;
     }
 }
-
