@@ -16,7 +16,7 @@ public class PlayerApiImpl implements PlayerApi {
 
     @POST
     @Override
-    public String createPlayer(String name) {
+    public String createPlayer(String name, String birthday, String height, String weight, String startedTrainings, String previousExperience) {
         return null;
     }
 
@@ -42,9 +42,9 @@ public class PlayerApiImpl implements PlayerApi {
     }
 
     @GET
-    @Path(" /list/{filter}")
+    @Path("/list")
     @Override
-    public String getPlayers(@PathParam("filter") Integer id) {
+    public String getPlayers(@QueryParam("start") Integer start, @QueryParam("limit") Integer limit) {
         return null;
     }
 }
