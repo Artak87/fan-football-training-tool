@@ -8,7 +8,7 @@ package org.proffart.football.training.api;
 public interface PlayerApi {
     String createPlayer(String name);
     String savePlayer(Integer id);
-    String deletePlayer(String name);
-    String getPlayer(String name);
-    String getPlayers(String name);
+    String deletePlayer(Integer id);
+    String getPlayer(Integer id);
+    String getPlayers(Integer id);
 }
