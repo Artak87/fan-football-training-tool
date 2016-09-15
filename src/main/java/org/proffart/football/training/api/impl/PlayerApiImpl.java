@@ -4,6 +4,7 @@ import org.proffart.football.training.api.PlayerApi;
 import org.springframework.stereotype.Component;
 
 import javax.ws.rs.*;
+import java.util.Date;
 
 /**
  * Author Artak Mnatsakanyan
@@ -16,7 +17,14 @@ public class PlayerApiImpl implements PlayerApi {
 
     @POST
     @Override
-    public String createPlayer(String name, String birthday, String height, String weight, String startedTrainings, String previousExperience) {
+    public String createPlayer(
+            String fullName,
+            Date birthday,
+            Integer height,
+            Integer weight,
+            Date startedTrainings,
+            Integer previousExperience
+    ) {
         return null;
     }
 
