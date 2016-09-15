@@ -1,5 +1,6 @@
 package org.proffart.football.training.service;
 
+import org.proffart.football.training.domain.Filter;
 import org.proffart.football.training.domain.Player;
 import org.proffart.football.training.dto.PlayerDto;
 
@@ -14,4 +15,6 @@ public interface PleyerService {
     Player removePlayer(Integer playerId);
 
     Player getPlayer(Integer playerId);
+
+    Player getPlayers(Filter filter);
 }
