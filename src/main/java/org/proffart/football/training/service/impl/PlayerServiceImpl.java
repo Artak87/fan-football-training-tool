@@ -1,9 +1,9 @@
-package org.proffart.football.training.service;
+package org.proffart.football.training.service.impl;
 
-import org.proffart.football.training.domain.Player;
 import org.proffart.football.training.domain.Filter;
+import org.proffart.football.training.domain.Player;
 import org.proffart.football.training.dto.PlayerDto;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.proffart.football.training.service.PleyerService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -33,6 +33,4 @@ public class PlayerServiceImpl implements PleyerService {
     public Player getPlayers(Filter filter) {
         return null;
     }
-
-
 }
