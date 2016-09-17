@@ -9,7 +9,7 @@ import org.proffart.football.training.domain.User;
  */
 public class GroupDto {
     private Integer groupId;
-    private User user;
+    private String name;
 
     public Integer getGroupId() {
         return groupId;
@@ -17,14 +17,6 @@ public class GroupDto {
 
     public void setGroupId(Integer groupId) {
         this.groupId = groupId;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public String getName() {
@@ -35,5 +27,5 @@ public class GroupDto {
         this.name = name;
     }
 
-    private String name;
+
 }
