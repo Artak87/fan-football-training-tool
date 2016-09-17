@@ -1,8 +1,7 @@
 package org.proffart.football.training.service.impl;
 
-import org.proffart.football.training.domain.Player;
+import org.proffart.football.training.domain.Group;
 import org.proffart.football.training.dto.GroupDto;
-import org.proffart.football.training.dto.PlayerDto;
 import org.proffart.football.training.service.PlayerGroupService;
 
 /**
@@ -13,17 +12,17 @@ import org.proffart.football.training.service.PlayerGroupService;
 public class PlayerGroupServiceImpl implements PlayerGroupService {
 
     @Override
-    public Player createGroup(String groupName) {
+    public Group createGroup(String groupName) {
         return null;
     }
 
     @Override
-    public Player removeGroup(Integer groupId) {
+    public Group removeGroup(Integer groupId) {
         return null;
     }
 
     @Override
-    public Player saveGroup(GroupDto groupDto) {
+    public Group saveGroup(GroupDto groupDto) {
         return null;
     }
 }
