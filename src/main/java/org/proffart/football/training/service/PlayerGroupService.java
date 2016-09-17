@@ -1,6 +1,6 @@
 package org.proffart.football.training.service;
 
-import org.proffart.football.training.domain.Player;
+import org.proffart.football.training.domain.Group;
 import org.proffart.football.training.dto.GroupDto;
 
 /**
@@ -10,9 +10,9 @@ import org.proffart.football.training.dto.GroupDto;
  */
 public interface PlayerGroupService {
 
-    Player createGroup(String groupName);
+    Group createGroup(String groupName);
 
-    Player removeGroup(Integer groupId);
+    Group removeGroup(Integer groupId);
 
-    Player saveGroup(GroupDto groupDto);
+    Group saveGroup(GroupDto groupDto);
 }
