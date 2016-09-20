@@ -8,7 +8,8 @@ import java.io.Serializable;
  * Date 9/12/16
  * Time 8:55 PM
  */
-@Entity(name = "player_group")
+@Entity
+@Table(name = "player_group")
 public class Group implements Serializable {
     private static final long serialVersionUID = -785107408431887821L;
 

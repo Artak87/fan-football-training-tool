@@ -9,7 +9,8 @@ import java.util.Date;
  * Date 9/11/16
  * Time 11:40 PM
  */
-@Entity(name = "player")
+@Entity
+@Table(name = "player")
 public class Player implements Serializable {
     private static final long serialVersionUID = -1437038751133898273L;
 
@@ -107,4 +108,7 @@ public class Player implements Serializable {
     public void setPreviousExperience(Integer previousExperience) {
         this.previousExperience = previousExperience;
     }
+
+
+
 }

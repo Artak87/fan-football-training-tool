@@ -1,9 +1,6 @@
 package org.proffart.football.training.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -11,7 +8,8 @@ import java.io.Serializable;
  * Date 7/29/16
  * Time 9:47 PM
  */
-@Entity(name = "user")
+@Entity
+@Table(name = "user")
 public class User implements Serializable {
     private static final long serialVersionUID = 8537416271048984112L;
 
