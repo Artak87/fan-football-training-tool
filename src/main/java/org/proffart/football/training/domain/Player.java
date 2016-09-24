@@ -61,6 +61,14 @@ public class Player implements Serializable {
         this.user = user;
     }
 
+    public Group getGroup() {
+        return group;
+    }
+
+    public void setGroup(Group group) {
+        this.group = group;
+    }
+
     public String getFullName() {
         return fullName;
     }
