@@ -1,14 +1,10 @@
 package org.proffart.football.training.persistence.integration;
 
 import org.junit.Test;
+import org.proffart.football.training.AbstractIntegrationTest;
 import org.proffart.football.training.domain.Player;
 import org.proffart.football.training.persistence.PlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
-
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 
 import java.util.Date;
 
@@ -20,7 +16,7 @@ import static org.junit.Assert.*;
  * Date 9/19/16
  * Time 9:37 PM
  */
-public class PlayerRepositoryTest extends AbstractRepositoryTest {
+public class PlayerRepositoryTest extends AbstractIntegrationTest {
 
     @Autowired
     private PlayerRepository playerRepository;

@@ -1,4 +1,4 @@
-package org.proffart.football.training.persistence.integration;
+package org.proffart.football.training;
 
 import org.junit.Ignore;
 import org.springframework.test.context.ContextConfiguration;
@@ -14,7 +14,7 @@ import javax.persistence.PersistenceContext;
  */
 @Ignore
 @ContextConfiguration("classpath:integration-test-applicationContext.xml")
-public abstract class AbstractRepositoryTest extends AbstractTransactionalJUnit4SpringContextTests {
+public abstract class AbstractIntegrationTest extends AbstractTransactionalJUnit4SpringContextTests {
 
     @PersistenceContext
     protected EntityManager entityManager;
